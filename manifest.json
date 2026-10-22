@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Subtitle Styler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Aumente e personalize as legendas (tamanho, cor e borda) na Netflix, YouTube, Prime Video, Disney+, Max, Globoplay e outros streamings.",
   "permissions": ["storage"],
   "icons": {
