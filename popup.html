@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Legenda Maior</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="" class="logo">
+    <div class="title">
+      <h1>Legenda Maior</h1>
+      <p>Funciona em qualquer streaming</p>
+    </div>
+    <label class="switch" title="Ligar/desligar">
+      <input type="checkbox" id="enabled">
+      <span></span>
+    </label>
+  </header>
+
+  <main>
+    <div class="col">
+      <div class="preview" id="preview">
+        <span id="previewText">Eu nunca disse isso a ninguém.</span>
+      </div>
+
+      <section>
+        <div class="label">
+          <h2>Tamanho</h2>
+          <output id="scaleValue">150%</output>
+        </div>
+        <div class="stepper">
+          <button id="minus" class="round" aria-label="Diminuir">−</button>
+          <input type="range" id="scale" min="50" max="400" step="10">
+          <button id="plus" class="round" aria-label="Aumentar">+</button>
+        </div>
+        <div class="segmented presets">
+          <button data-scale="100">100%</button>
+          <button data-scale="150">150%</button>
+          <button data-scale="200">200%</button>
+          <button data-scale="250">250%</button>
+        </div>
+      </section>
+
+      <section>
+        <div class="label">
+          <h2>Altura na tela</h2>
+          <output id="offsetValue">Padrão</output>
+        </div>
+        <input type="range" id="offset" min="0" max="40" step="1">
+      </section>
+    </div>
+
+    <div class="col">
+      <section>
+        <h2>Estilo</h2>
+        <div class="styles">
+          <button data-style="original">
+            <span class="chip chip-original">Aa</span>
+            Original
+          </button>
+          <button data-style="yellow">
+            <span class="chip" style="--c:#ffeb3b">Aa</span>
+            Amarela
+          </button>
+          <button data-style="white">
+            <span class="chip" style="--c:#ffffff">Aa</span>
+            Branca
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <div class="label">
+          <h2>Cor da letra</h2>
+          <label class="toggle-text"><input type="checkbox" id="customColor"> Personalizar</label>
+        </div>
+        <div class="swatches" id="textSwatches">
+          <button data-color="#ffffff" style="--c:#ffffff" aria-label="Branco"></button>
+          <button data-color="#ffeb3b" style="--c:#ffeb3b" aria-label="Amarelo"></button>
+          <button data-color="#4caf50" style="--c:#4caf50" aria-label="Verde"></button>
+          <button data-color="#00e5ff" style="--c:#00e5ff" aria-label="Ciano"></button>
+          <button data-color="#ff9800" style="--c:#ff9800" aria-label="Laranja"></button>
+          <label class="picker" title="Outra cor"><input type="color" id="textColor"></label>
+        </div>
+      </section>
+
+      <section>
+        <div class="label">
+          <h2>Borda da letra</h2>
+          <output id="outlineValue">Sem borda</output>
+        </div>
+        <input type="range" id="outlineWidth" min="0" max="5" step="0.5">
+        <div class="swatches" id="outlineSwatches">
+          <button data-color="#000000" style="--c:#000000" aria-label="Preto"></button>
+          <button data-color="#ffffff" style="--c:#ffffff" aria-label="Branco"></button>
+          <button data-color="#1a237e" style="--c:#1a237e" aria-label="Azul escuro"></button>
+          <button data-color="#b71c1c" style="--c:#b71c1c" aria-label="Vermelho escuro"></button>
+          <label class="picker" title="Outra cor"><input type="color" id="outlineColor"></label>
+        </div>
+        <label class="row-toggle">
+          <span>Remover fundo atrás da legenda</span>
+          <span class="switch small"><input type="checkbox" id="hideBackground"><span></span></span>
+        </label>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <button id="reset" class="reset">Restaurar padrão</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

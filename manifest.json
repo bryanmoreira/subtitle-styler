@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Legenda Maior",
+  "version": "1.0.0",
+  "description": "Aumente o tamanho das legendas na Netflix, YouTube, Prime Video, Disney+, Max, Globoplay e outros streamings.",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Ajustar legenda",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ]
+}
