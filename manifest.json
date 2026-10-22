@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Legenda Maior",
-  "version": "1.0.0",
-  "description": "Aumente o tamanho das legendas na Netflix, YouTube, Prime Video, Disney+, Max, Globoplay e outros streamings.",
+  "name": "Subtitle Styler",
+  "version": "1.0.1",
+  "description": "Aumente e personalize as legendas (tamanho, cor e borda) na Netflix, YouTube, Prime Video, Disney+, Max, Globoplay e outros streamings.",
   "permissions": ["storage"],
   "icons": {
     "16": "icons/icon16.png",

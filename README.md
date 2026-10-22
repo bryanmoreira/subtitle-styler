@@ -1,6 +1,6 @@
-# Legenda Maior
+# Subtitle Styler
 
-Extensão do Chrome para aumentar as legendas da Netflix e de outros streamings.
+Extensão do Chrome para aumentar e personalizar as legendas (tamanho, cor e borda) da Netflix e de outros streamings.
 
 ## Instalar
 

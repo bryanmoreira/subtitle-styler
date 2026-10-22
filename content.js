@@ -9,7 +9,7 @@ const DEFAULTS = {
   outlineWidth: 0, // px; 0 = sem borda
   hideBackground: false,
 };
-const STYLE_ID = "legenda-maior-style";
+const STYLE_ID = "subtitle-styler-style";
 
 // Containers de legenda conhecidos. Escalamos o container com transform para
 // não brigar com os font-size inline que cada player define.
